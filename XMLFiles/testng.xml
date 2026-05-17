@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <listeners>
+	
+	
+		<listener class-name="Listener.TestNGLIstener1"></listener>		
+		<listener class-name="Listener.MyRetryTransformer"></listener>
+		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
+	    
+	</listeners>
+    <classes>
+      <class name="Base.BaseClass"/>
+      <class name="Testcases.ApplicationLogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
